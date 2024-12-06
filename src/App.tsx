@@ -46,27 +46,30 @@ class App extends React.Component<{}, State> {
     return (
       <div className="App">
         <form>
-          <label>
+          <label htmlFor="itemId">
             Item Width:
             <input
+              id="itemId"
               type="number"
               name="itemWidth"
               value={itemWidth}
               onChange={this.handleChange}
             />
           </label>
-          <label>
+          <label htmlFor="frameId">
             Frame Size:
             <input
+              id="frameId"
               type="number"
               name="frameSize"
               value={frameSize}
               onChange={this.handleChange}
             />
           </label>
-          <label>
+          <label htmlFor="stepId">
             Step:
             <input
+              id="stepId"
               type="number"
               name="step"
               value={step}

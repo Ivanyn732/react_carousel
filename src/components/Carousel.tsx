@@ -72,8 +72,8 @@ const Carousel: React.FC<CarouselProps> = ({
         }}
       >
         {images.map((image, index) => (
-          <li key={index} style={{ width: `${itemWidth}px` }}>
-            <img src={image} alt={`Slide ${index + 1}`} />
+          <li key={index}>
+            <img src={image} width={itemWidth} alt={`Slide ${index + 1}`} />
           </li>
         ))}
       </ul>
